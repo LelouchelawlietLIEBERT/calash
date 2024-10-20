@@ -1,0 +1,23 @@
+#cal{
+    border: 1px solid rgb(107, 103, 103);
+    border-radius: 5px;
+    width: 200px;
+    background-color: rgba(33, 32, 65, 0.985);
+}
+#dsp{
+    margin:10px;
+    width: 86%;
+    height: 30px;
+    background-color: rgb(81, 107, 28);
+}
+.button{
+    width: 40px;
+    height: 40px;
+    margin: 3px;
+    background-color: rgb(64, 62, 62);
+    color: yellow;
+}
+.bc{
+    display:flex;
+    justify-content: center;
+}

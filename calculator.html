@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CALCULATOR</title>
+    <link rel="stylesheet" href="cal.css">
+    <style></style>
+</head>
+<body> 
+    <h1>CALCULATOR</h1><br>
+    <div id="cal">
+        <input type="text" id="dsp">
+        <div class="bc">
+            <button class="button" onclick="cexp=' ';
+            document.querySelector('#dsp').value=cexp;">C</button>
+            <button class="button" onclick="cexp+='1';
+            document.querySelector('#dsp').value=cexp;">1</button>
+            <button class="button" onclick="cexp+='2';
+            document.querySelector('#dsp').value=cexp;">2</button>
+        </div>
+        <div class="bc">
+            <button class="button" onclick="cexp+='+';
+            document.querySelector('#dsp').value=cexp;">+</button>
+            <button class="button" onclick="cexp+='3';
+            document.querySelector('#dsp').value=cexp;">3</button>
+            <button class="button" onclick="cexp+='4';
+            document.querySelector('#dsp').value=cexp;">4</button>
+        </div>
+        <div class="bc">
+            <button class="button" onclick="cexp+='-';
+            document.querySelector('#dsp').value=cexp;">-</button>
+            <button class="button" onclick="cexp+='5';
+            document.querySelector('#dsp').value=cexp;">5</button>
+            <button class="button" onclick="cexp+='6';
+            document.querySelector('#dsp').value=cexp;">6</button>
+        </div>
+        <div class="bc">
+            <button class="button" onclick="cexp+='*';
+            document.querySelector('#dsp').value=cexp;">*</button>
+            <button class="button" onclick="cexp+='7';
+            document.querySelector('#dsp').value=cexp;">7</button>
+            <button class="button" onclick="cexp+='8';
+            document.querySelector('#dsp').value=cexp;">8</button>
+        </div>
+        <div class="bc">
+            <button class="button" onclick="cexp+='/';
+            document.querySelector('#dsp').value=cexp;">/</button>
+            <button class="button" onclick="cexp=eval(cexp);
+            document.querySelector('#dsp').value=`ANS = ${cexp}`;">=</button>
+            <button class="button" onclick="cexp+='9';
+            document.querySelector('#dsp').value=cexp;">9</button>
+        </div>
+        <div class="bc">
+            <button class="button" onclick="cexp+='0';
+            document.querySelector('#dsp').value=cexp;">0</button>
+            <button class="button" onclick="cexp+='.';
+            document.querySelector('#dsp').value=cexp;">.</button>
+        </div>
+    </div>
+
+<script>
+    let cexp = '';
+    document.querySelector('#dsp').value = cexp;
+</script>
+</body>
+</html>
